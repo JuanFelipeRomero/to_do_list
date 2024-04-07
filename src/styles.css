@@ -5,7 +5,7 @@
     --poppins: "Poppins", sans-serif;
 
     /*Colors*/
-
+    --blue: rgb(63,94,251);
 
     /**/
 }
@@ -17,17 +17,18 @@
 
 body {
     font-family: var(--poppins);
+    background-color: rgb(245, 245, 245);
 }
 
 /*Styles*/
 
 .container {
-    width: 60%;
+    width: 100%;
     margin: auto;
 }
 
-.firstSection, .taskscContainer {
-    width: 100%;
+.firstSection {
+    width: 100;
     padding: 48px;
 }
 
@@ -38,11 +39,80 @@ body {
     color: white;
 }
 
+.firstSection__welcomeTexts {
+    width: 70%;
+    margin: auto;
+}
+
 .firstSection__inputContainer {
     width: 100%;
     margin: auto;
     margin-top: 48px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
+.firstSection__inputContainer > input {
+    width: 400px;
+    padding: 12px 32px;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    font-family: var(--poppins);
+}
+
+.firstSection__inputContainer > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 28px;
+    color: var(--blue);
+}
+
+.firstSection__inputContainer > button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+
+.tasksContainer__tasksList {
+    margin: 28px auto;
+    width: 480px;
+    padding: 0px;
+    list-style: none;
+}
+
+.task__checkbox {
+    display: flex;
+    gap: 20px;
+}
+
+.tasksContainer__tasksList > li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 6px solid var(--blue);
+    padding: 16px 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(230, 230, 230);
+    border-radius: 8px;
+}
+
+.tasksContainer__tasksList > li > button{
+    background-color: white;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.tasksContainer__tasksList > li > button:hover {
+    background-color: rgb(240, 240, 240);
+}
