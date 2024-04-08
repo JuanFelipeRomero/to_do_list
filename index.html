@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple to do list</title>
     <link rel="stylesheet" href="/src/styles.css">
-    <script src="/src/main.js"></script>
+    
 </head>
 <body>
 
@@ -13,28 +13,21 @@
         <section class="firstSection">
             <div class="firstSection__welcomeTexts">
                 <h2>Hellow Juan</h2>
-                <p>Abril 4 de 2024</p>
+                <p id="date">Abril 4 de 2024</p>
             </div>
             <div class="firstSection__inputContainer">
-                <input type="text" name="taks" id="taskInput" class="inputContainer__input" placeholder="New task">
-                <button class="inputContainer__button" id="AddButton"><img src="/public/assets/logos/plus.svg" alt=""></button>
+                <input type="text" name="taks" id="taskInput" class="inputContainer__input" id="taskInput" placeholder="New task">
+                <button class="inputContainer__button" id="addButton"><img src="/public/assets/logos/plus.svg" alt=""></button>
             </div>
     
         </section>
     
         <section class="taskscContainer">
-            <ul class="tasksContainer__tasksList">
-                <li class="taskList__task">
-                    <div class="task__checkbox">
-                        <input type="checkbox" class="task__CheckBox">
-                        <p class="">Develop a web project</p>
-                    </div>
-                    <button class="task__deleteButton">x</button>
-                </li>
+            <ul class="tasksContainer__tasksList" id="taskList">
                 <!-- tasks -->
             </ul>
         </section>
     </div>
-
+    <script src="/src/main.js"></script>
 </body>
 </html>

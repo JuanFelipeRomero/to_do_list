@@ -88,6 +88,10 @@ body {
     list-style: none;
 }
 
+.taskList__task {
+    margin-top: 24px;
+}
+
 .task__checkbox {
     display: flex;
     gap: 20px;
